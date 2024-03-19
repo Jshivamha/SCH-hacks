@@ -28,6 +28,7 @@ const Customers = () => {
         {/* </ColumnsDirective> */}
         {/* <Inject services={[Page, Selection, Toolbar, Edit, Sort, Filter]} /> */}
       {/* </GridComponent> */}
+      <span className=' text-xl'>No consumers !</span>
     </div>
   );
 };
