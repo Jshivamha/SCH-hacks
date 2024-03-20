@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Signup = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
      username:'',
       password:'',
@@ -400,6 +402,9 @@ const Signup = () => {
           {/* Add other input fields based on the keys */}
           {/* Example: */}
           <button
+          onClick={()=> {
+            navigate("/products")
+          }}
             type="submit"
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           >

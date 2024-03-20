@@ -9,6 +9,8 @@ import './App.css';
 
 import { useStateContext } from './contexts/ContextProvider';
 import Api from './components/Api';
+import Landingpage from './components/Landingpage';
+import Signup from './components/Signup';
 
 const App = () => {
   const { setCurrentColor, setCurrentMode, currentMode, activeMenu, currentColor, themeSettings, setThemeSettings } = useStateContext();
@@ -66,14 +68,16 @@ const App = () => {
 
               <Routes>
                 {/* dashboard  */}
-                <Route path="/" element={(<Ecommerce />)} />
+                <Route path="/" element={<Landingpage />} />
                 <Route path="/ecommerce" element={(<Ecommerce />)} />
 
                 {/* pages  */}
                 <Route path="/orders" element={<Orders />} />
+                <Route path="/Home" element={<Landingpage />} />
                 <Route path="/Integrations" element={<Integrations />} />
                 <Route path="/customers" element={<Customers />} />
-                <Route path="/api" element={<Api />} />
+                <Route path="/products" element={<Api />} />
+                <Route path="/register" element={<Signup />} />
 
                 {/* apps  */}
                 <Route path="/kanban" element={<Kanban />} />

@@ -116,9 +116,9 @@ const Api = () => {
                             <label htmlFor="Product" className='text-black'>Product Catagory</label>
                             <select name="Product" id="Product" className='h-12 rounded-md p-2 bg-transparent  text-black border-2'>
                                 <option className='bg-white'  value="select">please Select</option>
-                                <option className='bg-white' value="Mobile">Mobile</option>
-                                <option className='bg-white' value="Laptop">Laptop</option>
-                                <option className='bg-white' value="Desktop">Desktop</option>
+                                <option className='bg-white' value="Mobile">Clothing</option>
+                                <option className='bg-white' value="Laptop">Footwear</option>
+                                <option className='bg-white' value="Desktop">Electronics</option>
                                 <option className='bg-white' value="Accessories">Accessories</option>
                             </select>
                         </div>
@@ -126,20 +126,38 @@ const Api = () => {
                             <label htmlFor="sub" className='text-black'>Product Sub-Catagory</label>
                             <select name="sub" id="sub" className='h-12 rounded-md p-2 bg-transparent text-black border-2'>
                                 <option className='bg-white' value="select">please Select</option>
-                                <option className='bg-white' value="Mobile">Mobile</option>
-                                <option className='bg-white' value="Laptop">Laptop</option>
-                                <option className='bg-white' value="Desktop">Desktop</option>
-                                <option className='bg-white' value="Accessories">Accessories</option>
+                                <option className='bg-white' value="Mobile">T Shirt</option>
+                                <option className='bg-white' value="Laptop">Pants</option>
+                                <option className='bg-white' value="Desktop">Jacket</option>
+                                <option className='bg-white' value="Accessories">Hoodie</option>
                             </select>
                         </div>
                         <div className='flex flex-col w-60 h-20 gap-1 mt-5'>
-                            <label htmlFor="marketplace" className='text-black'>Marketplce</label>
+                            <label htmlFor="marketplace" className='text-black'>Marketplace</label>
                             <select name="Brand" id="Brand" className='h-12 rounded-md p-2 bg-transparent text-black border-2'>
                                 <option className='bg-white' value="select">please Select</option>
-                                <option className='bg-white' value="Mobile">Mobile</option>
-                                <option className='bg-white' value="Laptop">Laptop</option>
-                                <option className='bg-white' value="Desktop">Desktop</option>
-                                <option className='bg-white' value="Accessories">Accessories</option>
+                                <option className='bg-white' value="Mobile">Amazon</option>
+                                <option className='bg-white' value="Laptop">Flipkart</option>
+                                <option className='bg-white' value="Desktop">Shoplues</option>
+                                <option className='bg-white' value="Accessories">Ebay</option>
+                            </select>
+                        </div>
+                        <div className='flex flex-col w-60 h-20 gap-1 mt-5'>
+                            <label htmlFor="marketplace" className='text-black'>Material type</label>
+                            <select name="Brand" id="Brand" className='h-12 rounded-md p-2 bg-transparent text-black border-2'>
+                                <option className='bg-white' value="select">please Select</option>
+                                <option className='bg-white' value="Mobile">Wool</option>
+                                <option className='bg-white' value="Laptop">Polyester</option>
+                                <option className='bg-white' value="Desktop"></option>
+                            </select>
+                        </div>
+                        <div className='flex flex-col w-60 h-20 gap-1 mt-5'>
+                            <label htmlFor="marketplace" className='text-black'>Occasion</label>
+                            <select name="Brand" id="Brand" className='h-12 rounded-md p-2 bg-transparent text-black border-2'>
+                                <option className='bg-white' value="select">please Select</option>
+                                <option className='bg-white' value="Mobile">Party</option>
+                                <option className='bg-white' value="Laptop">Casual</option>
+                                <option className='bg-white' value="Desktop">Sports</option>
                             </select>
                         </div>
                     </div>

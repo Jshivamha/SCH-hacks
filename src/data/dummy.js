@@ -443,7 +443,7 @@ export const links = [
     title: 'Pages',
     links: [
       {
-        name: 'Products',
+        name: 'products',
         icon: <AiOutlineShoppingCart />,
       },
       {
