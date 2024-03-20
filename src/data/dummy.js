@@ -136,40 +136,35 @@ export const barPrimaryYAxis = {
 };
 const areaChartData = [
   [
-    { x: new Date(2002, 0, 1), y: 2.2 },
-    { x: new Date(2003, 0, 1), y: 3.4 },
-    { x: new Date(2004, 0, 1), y: 2.8 },
-    { x: new Date(2005, 0, 1), y: 1.6 },
-    { x: new Date(2006, 0, 1), y: 2.3 },
-    { x: new Date(2007, 0, 1), y: 2.5 },
-    { x: new Date(2008, 0, 1), y: 2.9 },
-    { x: new Date(2009, 0, 1), y: 3.8 },
-    { x: new Date(2010, 0, 1), y: 1.4 },
-    { x: new Date(2011, 0, 1), y: 3.1 },
+    { x: new Date(2019, 0, 1), y: 2.2 },
+    { x: new Date(2020, 0, 1), y: 3.4 },
+    { x: new Date(2021, 0, 1), y: 2.8 },
+    { x: new Date(2021, 0, 1), y: 1.6 },
+    { x: new Date(2022, 0, 1), y: 2.3 },
+    { x: new Date(2023, 0, 1), y: 2.5 },
+    { x: new Date(2024, 0, 1), y: 2.9 },
+    
   ],
   [
-    { x: new Date(2002, 0, 1), y: 2 },
-    { x: new Date(2003, 0, 1), y: 1.7 },
-    { x: new Date(2004, 0, 1), y: 1.8 },
-    { x: new Date(2005, 0, 1), y: 2.1 },
-    { x: new Date(2006, 0, 1), y: 2.3 },
-    { x: new Date(2007, 0, 1), y: 1.7 },
-    { x: new Date(2008, 0, 1), y: 1.5 },
-    { x: new Date(2009, 0, 1), y: 2.8 },
-    { x: new Date(2010, 0, 1), y: 1.5 },
-    { x: new Date(2011, 0, 1), y: 2.3 },
+    { x: new Date(2019, 0, 1), y: 2.2 },
+    { x: new Date(2020, 0, 1), y: 3.4 },
+    { x: new Date(2021, 0, 1), y: 2.8 },
+    { x: new Date(2021, 0, 1), y: 1.6 },
+    { x: new Date(2022, 0, 1), y: 2.3 },
+    { x: new Date(2023, 0, 1), y: 2.5 },
+    { x: new Date(2024, 0, 1), y: 2.9 },
+
   ],
   [
-    { x: new Date(2002, 0, 1), y: 0.8 },
-    { x: new Date(2003, 0, 1), y: 1.3 },
-    { x: new Date(2004, 0, 1), y: 1.1 },
-    { x: new Date(2005, 0, 1), y: 1.6 },
-    { x: new Date(2006, 0, 1), y: 2 },
-    { x: new Date(2007, 0, 1), y: 1.7 },
-    { x: new Date(2008, 0, 1), y: 2.3 },
-    { x: new Date(2009, 0, 1), y: 2.7 },
-    { x: new Date(2010, 0, 1), y: 1.1 },
-    { x: new Date(2011, 0, 1), y: 2.3 },
+    { x: new Date(2019, 0, 1), y: 2.2 },
+    { x: new Date(2020, 0, 1), y: 3.4 },
+    { x: new Date(2021, 0, 1), y: 2.8 },
+    { x: new Date(2021, 0, 1), y: 1.6 },
+    { x: new Date(2022, 0, 1), y: 2.3 },
+    { x: new Date(2023, 0, 1), y: 2.5 },
+    { x: new Date(2024, 0, 1), y: 2.9 },
+    
+
   ],
 ];
 
@@ -398,7 +393,7 @@ export const customersGrid = [
 ];
 
 export const employeesGrid = [
-  { headerText: 'Employee',
+  { headerText: 'Selled On',
     width: '150',
     template: gridEmployeeProfile,
     textAlign: 'Center' },
@@ -408,23 +403,23 @@ export const employeesGrid = [
     textAlign: 'Center',
   },
   { field: 'Title',
-    headerText: 'Designation',
+    headerText: 'Category',
     width: '170',
     textAlign: 'Center',
   },
-  { headerText: 'Country',
+  { headerText: 'Place',
     width: '120',
     textAlign: 'Center',
     template: gridEmployeeCountry },
 
-  { field: 'HireDate',
-    headerText: 'Hire Date',
+  { field: 'Ordered at',
+    headerText: 'Ordered at',
     width: '135',
     format: 'yMd',
     textAlign: 'Center' },
 
-  { field: 'ReportsTo',
-    headerText: 'Reports To',
+  { field: 'Delivered by',
+    headerText: 'Delivered by',
     width: '120',
     textAlign: 'Center' },
   { field: 'EmployeeID',
@@ -464,10 +459,10 @@ export const links = [
   {
     title: 'Apps',
     links: [
-      {
-        name: 'calendar',
-        icon: <AiOutlineCalendar />,
-      },
+      // {
+      //   name: 'calendar',
+      //   icon: <AiOutlineCalendar />,
+      // },
       {
         name: 'Notes',
         icon: <BsKanban />,
@@ -528,8 +523,8 @@ export const chatData = [
   {
     image:
       avatar3,
-    message: 'New message received',
-    desc: 'Check Inbox',
+    message: 'Your ordered pushed to amazon',
+    desc: 'Check all orders',
     time: '11:56 AM',
   },
   {
@@ -1432,7 +1427,7 @@ export const employeesData = [
     Name: 'Flipkart',
     Title: 'Clothing',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'Noida',
     ReportsTo: 'direct',
     EmployeeImage:
       avatar3,
@@ -1442,7 +1437,7 @@ export const employeesData = [
     Name: 'delhimart',
     Title: 'Appliances',
     HireDate: '01/02/2021',
-    Country: 'delhi',
+    Country: 'Mumbai',
     ReportsTo: 'direct',
     EmployeeImage:
       avatar4,
@@ -2369,32 +2364,32 @@ export const scheduleData = [
 
 export const lineChartData = [
   [
-    { x: new Date(2005, 0, 1), y: 21 },
-    { x: new Date(2006, 0, 1), y: 24 },
-    { x: new Date(2007, 0, 1), y: 36 },
-    { x: new Date(2008, 0, 1), y: 38 },
-    { x: new Date(2009, 0, 1), y: 54 },
-    { x: new Date(2010, 0, 1), y: 57 },
-    { x: new Date(2011, 0, 1), y: 70 },
+    { x: new Date(2017, 0, 1), y: 21 },
+    { x: new Date(2018, 0, 1), y: 24 },
+    { x: new Date(2019, 0, 1), y: 36 },
+    { x: new Date(2020, 0, 1), y: 38 },
+    { x: new Date(2021, 0, 1), y: 54 },
+    { x: new Date(2022, 0, 1), y: 57 },
+    { x: new Date(2023, 0, 1), y: 70 },
   ],
   [
-    { x: new Date(2005, 0, 1), y: 28 },
-    { x: new Date(2006, 0, 1), y: 44 },
-    { x: new Date(2007, 0, 1), y: 48 },
-    { x: new Date(2008, 0, 1), y: 50 },
-    { x: new Date(2009, 0, 1), y: 66 },
-    { x: new Date(2010, 0, 1), y: 78 },
-    { x: new Date(2011, 0, 1), y: 84 },
+    { x: new Date(2018, 0, 1), y: 28 },
+    { x: new Date(2019, 0, 1), y: 44 },
+    { x: new Date(2020, 0, 1), y: 48 },
+    { x: new Date(2021, 0, 1), y: 50 },
+    { x: new Date(2022, 0, 1), y: 66 },
+    { x: new Date(2023, 0, 1), y: 78 },
+    { x: new Date(2024, 0, 1), y: 84 },
   ],
 
   [
-    { x: new Date(2005, 0, 1), y: 10 },
-    { x: new Date(2006, 0, 1), y: 20 },
-    { x: new Date(2007, 0, 1), y: 30 },
-    { x: new Date(2008, 0, 1), y: 39 },
-    { x: new Date(2009, 0, 1), y: 50 },
-    { x: new Date(2010, 0, 1), y: 70 },
-    { x: new Date(2011, 0, 1), y: 100 },
+    { x: new Date(2018, 0, 1), y: 10 },
+    { x: new Date(2019, 0, 1), y: 20 },
+    { x: new Date(2020, 0, 1), y: 30 },
+    { x: new Date(2021, 0, 1), y: 39 },
+    { x: new Date(2022, 0, 1), y: 50 },
+    { x: new Date(2023, 0, 1), y: 70 },
+    { x: new Date(2024, 0, 1), y: 100 },
   ],
 ];
 export const dropdownData = [
@@ -2447,13 +2442,13 @@ export const lineCustomSeries = [
 ];
 
 export const pieChartData = [
-  { x: 'Labour', y: 18, text: '18%' },
-  { x: 'Legal', y: 8, text: '8%' },
-  { x: 'Production', y: 15, text: '15%' },
-  { x: 'License', y: 11, text: '11%' },
-  { x: 'Facilities', y: 18, text: '18%' },
-  { x: 'Taxes', y: 14, text: '14%' },
-  { x: 'Insurance', y: 16, text: '16%' },
+  { x: 'Punjab', y: 18, text: '18%' },
+  { x: 'Rajasthan', y: 8, text: '8%' },
+  { x: 'Utter Pradesh', y: 15, text: '15%' },
+  { x: 'Delhi', y: 11, text: '11%' },
+  { x: 'Jharkhand', y: 18, text: '18%' },
+  { x: 'Goa', y: 14, text: '14%' },
+  { x: 'Chandigarh', y: 16, text: '16%' },
 ];
 
 export const contextMenuItems = [
